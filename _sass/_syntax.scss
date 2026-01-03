@@ -1,0 +1,137 @@
+// Syntax highlighting for code blocks
+// Light and dark mode support
+
+.highlight {
+  border-radius: 2px;
+  overflow-x: auto;
+  margin: 1.5em 0;
+
+  pre {
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+  }
+
+  code {
+    background-color: transparent;
+    padding: 0;
+    border: none;
+  }
+
+  // Comments
+  .c, .c1, .cm, .cp, .cs {
+    color: var(--syntax-comment);
+    font-style: italic;
+  }
+
+  // Errors
+  .err {
+    color: var(--syntax-error);
+    background-color: var(--syntax-error-bg);
+  }
+
+  // Keywords
+  .k, .kc, .kd, .kn, .kp, .kr, .kt {
+    color: var(--syntax-keyword);
+    font-weight: bold;
+  }
+
+  // Operators
+  .o, .ow {
+    color: var(--syntax-operator);
+  }
+
+  // Punctuation
+  .p {
+    color: var(--syntax-punctuation);
+  }
+
+  // Names
+  .n, .nb, .nc, .ne, .nf, .ni, .nl, .nn, .nt, .nv {
+    color: var(--syntax-name);
+  }
+
+  // Functions
+  .nf {
+    color: var(--syntax-function);
+    font-weight: bold;
+  }
+
+  // Classes
+  .nc {
+    color: var(--syntax-class);
+    font-weight: bold;
+  }
+
+  // Strings
+  .s, .s1, .s2, .sb, .sc, .sd, .se, .sh, .si, .sx {
+    color: var(--syntax-string);
+  }
+
+  // Numbers
+  .m, .mf, .mh, .mi, .mo {
+    color: var(--syntax-number);
+  }
+
+  // Variables
+  .na, .nb, .nv, .vc, .vg, .vi {
+    color: var(--syntax-variable);
+  }
+
+  // Built-ins
+  .nb, .bp {
+    color: var(--syntax-builtin);
+  }
+
+  // Constants
+  .no, .kc {
+    color: var(--syntax-constant);
+  }
+
+  // Generics
+  .gd {
+    color: var(--syntax-deleted);
+    background-color: var(--syntax-deleted-bg);
+  }
+
+  .gi {
+    color: var(--syntax-inserted);
+    background-color: var(--syntax-inserted-bg);
+  }
+
+  .gh {
+    color: var(--syntax-heading);
+    font-weight: bold;
+  }
+
+  .gu {
+    color: var(--syntax-subheading);
+    font-weight: bold;
+  }
+}
+
+// Inline code
+code {
+  background-color: var(--inline-code-bg);
+  color: var(--inline-code-text);
+  padding: 0.2em 0.4em;
+  border-radius: 3px;
+  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', 'Consolas', monospace;
+  font-size: 0.9em;
+}
+
+// Pre blocks without highlight class
+pre {
+  background-color: var(--code-bg);
+  color: var(--code-text);
+  padding: 1em;
+  border-radius: 4px;
+  overflow-x: auto;
+  margin: 1.5em 0;
+
+  code {
+    background-color: transparent;
+    padding: 0;
+    border-radius: 0;
+  }
+}

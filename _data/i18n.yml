@@ -1,17 +1,17 @@
 ja:
   site:
     title: goofmint.dev
-    description: 個人ポートフォリオサイト
+    description: アツシの個人ポートフォリオサイト
 
   nav:
     home: ホーム
     projects: プロジェクト
     blog: ブログ
-    about: について
+    about: 私について
 
   home:
-    hero_title: Welcome to goofmint.dev
-    hero_description: 個人ポートフォリオサイトへようこそ
+    hero_title: goofmint.devへようこそ
+    hero_description: アツシの個人ポートフォリオサイトへようこそ
     about_title: About
     about_description: CodeRabbit デベロッパーアドボケイト、株式会社MOONGIFT代表取締役、一般社団法人DevRel代表理事。プログラマ、エンジニアとしていくつかの企業で働き、28歳のときに独立。2004年、まだ情報が少なかったオープンソースソフトの技術ブログ『MOONGIFT』を開設し、毎日情報を発信している。2013年に法人化、ビジネスとエンジニアを結ぶエバンジェリスト業「DevRel」活動をスタートした。ソーシャルIDはすべて goofmint。
     featured_projects: 注目のプロジェクト
@@ -26,7 +26,7 @@ ja:
     title: ブログ
 
   about:
-    title: について
+    title: アツシについて
     skills: スキル
     experience: 経歴
     contact: お問い合わせ
@@ -50,9 +50,18 @@ en:
 
   home:
     hero_title: Welcome to goofmint.dev
-    hero_description: Welcome to my personal portfolio site
+    hero_description: "Welcome to Atsushi's personal portfolio site"
     about_title: About
-    about_description: This is where you can write your self-introduction and experience.
+    about_description: >-
+      CodeRabbit Developer Advocate, CEO of MOONGIFT Inc.,
+      and Representative Director of DevRel Association.
+      Worked as a programmer and engineer at several companies,
+      and became independent at the age of 28.
+      In 2004, he launched "MOONGIFT", a technical blog on open source software,
+      where he shares information daily.
+      In 2013, he incorporated the business and started DevRel activities
+      that connect business and engineers.
+      His social ID is goofmint everywhere.
     featured_projects: Featured Projects
     latest_posts: Latest Posts
     view_all_projects: View All Projects
@@ -65,7 +74,7 @@ en:
     title: Blog
 
   about:
-    title: About
+    title: About me
     skills: Skills
     experience: Experience
     contact: Contact

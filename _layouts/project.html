@@ -7,6 +7,9 @@ layout: default
     <h1 class="project-title">{{ page.title }}</h1>
     {% if page.tech %}
     <div class="project-tech">
+      {% if page.status %}
+        <span class="tech-tag status-{{ page.status | downcase }}">{{ page.status }}</span>
+      {% endif %}
       {% for tech in page.tech %}
         <span class="tech-tag">{{ tech }}</span>
       {% endfor %}
@@ -18,8 +21,11 @@ layout: default
     {{ content }}
   </div>
 
-  {% if page.github or page.demo %}
+  {% if page.github or page.demo or page.site %}
   <div class="project-links">
+    {% if page.site %}
+      <a href="{{ page.site }}" target="_blank" class="btn">URL</a>
+    {% endif %}
     {% if page.github %}
       <a href="{{ page.github }}" target="_blank" class="btn">GitHub</a>
     {% endif %}

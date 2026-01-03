@@ -1,7 +1,7 @@
 # Site settings
 title: goofmint.dev
 description: >-
-  個人ポートフォリオサイト
+  Personal Portfolio Site of Atsushi Nakatsugawa, a DevRel lover based in Yokohama, Japan.
 baseurl: ""
 url: "https://goofmint.dev"
 
@@ -67,9 +67,11 @@ defaults:
     values:
       layout: "post"
       lang: "ja"
+      permalink: /blog/:year/:month/:day/:title/
   - scope:
       path: "_posts/en"
       type: "posts"
     values:
       layout: "post"
       lang: "en"
+      permalink: /en/blog/:year/:month/:day/:title/

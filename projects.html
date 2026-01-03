@@ -15,6 +15,9 @@ lang: ja
     <h2><a href="{{ project.url | relative_url }}">{{ project.title }}</a></h2>
     {% if project.tech %}
     <div class="project-tech">
+      {% if project.status %}
+        <span class="tech-tag status-{{ project.status | downcase }}">{{ project.status }}</span>
+      {% endif %}
       {% for tech in project.tech %}
         <span class="tech-tag">{{ tech }}</span>
       {% endfor %}

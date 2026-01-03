@@ -1,19 +1,19 @@
 github:
-  url: https://github.com/yourusername
+  url: https://github.com/goofmint
   icon: github.svg
   name: GitHub
 
 twitter:
-  url: https://twitter.com/yourusername
-  icon: twitter.svg
-  name: Twitter
+  url: https://twitter.com/goofmint
+  icon: X.svg
+  name: X
 
 linkedin:
-  url: https://linkedin.com/in/yourusername
+  url: https://www.linkedin.com/in/goofmint/
   icon: linkedin.svg
   name: LinkedIn
 
 email:
-  url: mailto:your-email@example.com
+  url: mailto:atsushi@moongift.jp
   icon: email.svg
   name: Email
