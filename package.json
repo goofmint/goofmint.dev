@@ -17,6 +17,13 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "bundle exec jekyll serve",
-    "build": "bundle exec jekyll build"
+    "build": "bundle exec jekyll build",
+    "deploy": "npm run build & wrangler pages publish ./_site --project-name=goofmint-dev --branch=main"
+  },
+  "assets": {
+    "directory": "./_site"
+  },
+  "devDependencies": {
+    "wrangler": "^4.54.0"
   }
 }
