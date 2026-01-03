@@ -10,8 +10,11 @@ Jekyll を使用して構築された個人ポートフォリオサイトです�
 
 - **ポートフォリオ**: プロジェクトの一覧と詳細ページ
 - **ブログ**: 技術記事などを投稿
+- **多言語対応**: 日本語・英語
+- **ダークモード**: ライト/ダークテーマ切り替え
 - **レスポンシブデザイン**: モバイル対応
 - **SEO対応**: jekyll-seo-tag プラグインを使用
+- **自動デプロイ**: GitHub Actions → Cloudflare Pages
 
 ## セットアップ
 
@@ -87,6 +90,28 @@ bundle exec jekyll build
 ```
 
 ビルドされたサイトは `_site/` ディレクトリに生成されます。
+
+## デプロイ
+
+このサイトはGitHub ActionsでCloudflare Pagesに自動デプロイされます。
+
+詳細な手順は [DEPLOYMENT.md](./DEPLOYMENT.md) を参照してください。
+
+### クイックスタート
+
+1. Cloudflare Pagesでプロジェクト作成
+2. GitHub Secretsに以下を設定：
+   - `CLOUDFLARE_API_TOKEN`
+   - `CLOUDFLARE_ACCOUNT_ID`
+3. `main` ブランチにプッシュすると自動デプロイ
+
+## 技術スタック
+
+- **フレームワーク**: Jekyll 4.3
+- **スタイル**: Sass/SCSS
+- **デプロイ**: Cloudflare Pages
+- **CI/CD**: GitHub Actions
+- **言語**: Ruby 3.2
 
 ## ライセンス
 
