@@ -7,6 +7,7 @@ ja:
     home: ホーム
     projects: プロジェクト
     blog: ブログ
+    cli: CLI
     about: 私について
 
   home:
@@ -24,6 +25,9 @@ ja:
 
   blog:
     title: ブログ
+
+  cli:
+    title: CLI
 
   about:
     title: アツシについて
@@ -46,6 +50,7 @@ en:
     home: Home
     projects: Projects
     blog: Blog
+    cli: CLI
     about: About
 
   home:
@@ -72,6 +77,9 @@ en:
 
   blog:
     title: Blog
+
+  cli:
+    title: CLI
 
   about:
     title: About me
