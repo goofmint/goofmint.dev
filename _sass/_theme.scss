@@ -1,0 +1,219 @@
+// Theme variables
+:root {
+  // Light mode colors
+  --bg-color: #ffffff;
+  --text-color: #333333;
+  --header-bg: #f0fdf4;
+  --header-border: #d1fae5;
+  --link-color: #10b981;
+  --link-hover: #059669;
+  --card-bg: #f0fdf4;
+  --border-color: #d1fae5;
+  --hero-gradient-start: #10b981;
+  --hero-gradient-end: #14b8a6;
+  --code-bg: #f0fdf4;
+  --shadow-color: rgba(16, 185, 129, 0.1);
+  --button-bg: #10b981;
+  --button-hover: #059669;
+  --tag-bg: #d1fae5;
+  --tag-text: #047857;
+}
+
+[data-theme="dark"] {
+  // Dark mode colors
+  --bg-color: #1a1a1a;
+  --text-color: #e0e0e0;
+  --header-bg: #1f2937;
+  --header-border: #374151;
+  --link-color: #34d399;
+  --link-hover: #6ee7b7;
+  --card-bg: #1f2937;
+  --border-color: #374151;
+  --hero-gradient-start: #10b981;
+  --hero-gradient-end: #14b8a6;
+  --code-bg: #1f2937;
+  --shadow-color: rgba(16, 185, 129, 0.2);
+  --button-bg: #34d399;
+  --button-hover: #6ee7b7;
+  --tag-bg: #374151;
+  --tag-text: #a7f3d0;
+}
+
+// Apply theme colors
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+a {
+  color: var(--link-color);
+
+  &:hover {
+    color: var(--link-hover);
+  }
+}
+
+.site-header {
+  background-color: var(--header-bg);
+  border-bottom: 1px solid var(--header-border);
+}
+
+.site-footer {
+  background-color: var(--header-bg);
+  border-top: 1px solid var(--header-border);
+
+  .footer-content {
+    color: var(--text-color);
+  }
+}
+
+.project-card {
+  background-color: var(--card-bg);
+
+  h2, h3 {
+    a {
+      color: var(--text-color);
+      &:hover {
+        color: var(--link-color);
+      }
+    }
+  }
+}
+
+.tech-tag {
+  background-color: var(--tag-bg);
+  color: var(--tag-text);
+}
+
+.btn {
+  background-color: var(--button-bg);
+
+  &:hover {
+    background-color: var(--button-hover);
+  }
+}
+
+.post-list {
+  li {
+    border-bottom: 1px solid var(--border-color);
+  }
+
+  h2, h3 {
+    a {
+      color: var(--text-color);
+      &:hover {
+        color: var(--link-color);
+      }
+    }
+  }
+}
+
+section h2 {
+  border-bottom: 2px solid var(--border-color);
+}
+
+.post-content, .project-content {
+  code {
+    background-color: var(--code-bg);
+  }
+
+  pre {
+    background-color: var(--code-bg);
+  }
+}
+
+// Theme toggle button
+.theme-toggle {
+  background: none;
+  border: 2px solid var(--border-color);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  padding: 0;
+
+  &:hover {
+    border-color: var(--link-color);
+    transform: rotate(20deg);
+  }
+
+  svg {
+    width: 20px;
+    height: 20px;
+    fill: var(--text-color);
+  }
+
+  .sun-icon {
+    display: none;
+  }
+
+  .moon-icon {
+    display: block;
+  }
+}
+
+[data-theme="dark"] .theme-toggle {
+  .sun-icon {
+    display: block;
+  }
+
+  .moon-icon {
+    display: none;
+  }
+}
+
+// Language toggle button
+.lang-toggle {
+  background: none;
+  border: 2px solid var(--border-color);
+  border-radius: 20px;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.9em;
+  color: var(--text-color);
+  transition: all 0.3s ease;
+
+  &:hover {
+    border-color: var(--link-color);
+    color: var(--link-color);
+    transform: translateY(-2px);
+  }
+}
+
+// Header controls container
+.header-controls {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+// Social links dark mode support
+.social-link {
+  .social-icon {
+    filter: brightness(0) saturate(100%) invert(40%) sepia(0%) saturate(0%) hue-rotate(180deg) brightness(95%) contrast(90%);
+  }
+
+  &:hover .social-icon {
+    filter: brightness(0) saturate(100%) invert(56%) sepia(98%) saturate(565%) hue-rotate(106deg) brightness(93%) contrast(92%);
+  }
+}
+
+[data-theme="dark"] .social-link {
+  .social-icon {
+    filter: brightness(0) saturate(100%) invert(80%) sepia(0%) saturate(0%) hue-rotate(180deg) brightness(95%) contrast(90%);
+  }
+
+  &:hover {
+    background-color: rgba(52, 211, 153, 0.15);
+  }
+
+  &:hover .social-icon {
+    filter: brightness(0) saturate(100%) invert(73%) sepia(39%) saturate(458%) hue-rotate(99deg) brightness(95%) contrast(90%);
+  }
+}

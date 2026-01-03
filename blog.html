@@ -1,0 +1,21 @@
+---
+layout: default
+title: Blog
+permalink: /blog/
+lang: ja
+---
+
+{% include i18n.html %}
+
+<h1>{{ t.blog.title }}</h1>
+
+<ul class="post-list">
+  {% assign ja_posts = site.posts | where: "lang", "ja" %}
+  {% for post in ja_posts %}
+  <li class="post-item">
+    <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+    <p class="post-meta">{{ post.date | date: "%Y年%m月%d日" }}</p>
+    <p>{{ post.excerpt }}</p>
+  </li>
+  {% endfor %}
+</ul>

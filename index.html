@@ -1,0 +1,45 @@
+---
+layout: default
+title: Home
+lang: ja
+---
+
+{% include i18n.html %}
+
+<section class="hero">
+  <h1>{{ t.home.hero_title }}</h1>
+  <p>{{ t.home.hero_description }}</p>
+</section>
+
+<section class="intro">
+  <h2>{{ t.home.about_title }}</h2>
+  <p>{{ t.home.about_description }}</p>
+</section>
+
+<section class="projects-preview">
+  <h2>{{ t.home.featured_projects }}</h2>
+  <div class="project-grid">
+    {% for project in site.projects limit:3 %}
+    <div class="project-card">
+      <h3><a href="{{ project.url | relative_url }}">{{ project.title }}</a></h3>
+      <p>{{ project.excerpt }}</p>
+    </div>
+    {% endfor %}
+  </div>
+  <a href="{{ "/projects/" | relative_url }}" class="btn">{{ t.home.view_all_projects }}</a>
+</section>
+
+<section class="blog-preview">
+  <h2>{{ t.home.latest_posts }}</h2>
+  <ul class="post-list">
+    {% assign ja_posts = site.posts | where: "lang", "ja" %}
+    {% for post in ja_posts limit:3 %}
+    <li>
+      <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+      <p class="post-meta">{{ post.date | date: "%Y年%m月%d日" }}</p>
+      <p>{{ post.excerpt }}</p>
+    </li>
+    {% endfor %}
+  </ul>
+  <a href="{{ "/blog/" | relative_url }}" class="btn">{{ t.home.view_all_posts }}</a>
+</section>

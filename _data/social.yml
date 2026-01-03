@@ -1,0 +1,19 @@
+github:
+  url: https://github.com/yourusername
+  icon: github.svg
+  name: GitHub
+
+twitter:
+  url: https://twitter.com/yourusername
+  icon: twitter.svg
+  name: Twitter
+
+linkedin:
+  url: https://linkedin.com/in/yourusername
+  icon: linkedin.svg
+  name: LinkedIn
+
+email:
+  url: mailto:your-email@example.com
+  icon: email.svg
+  name: Email

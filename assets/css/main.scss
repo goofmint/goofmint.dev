@@ -1,0 +1,39 @@
+---
+---
+
+@import "base";
+@import "layout";
+@import "components";
+@import "theme";
+
+// Responsive design
+@media (max-width: 768px) {
+  .site-header .wrapper {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .header-right {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .site-nav {
+    flex-direction: column;
+    gap: 10px !important;
+    text-align: center;
+    width: 100%;
+  }
+
+  .header-controls {
+    justify-content: center;
+  }
+
+  .hero h1 {
+    font-size: 2em !important;
+  }
+
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+}

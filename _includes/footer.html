@@ -1,0 +1,18 @@
+<footer class="site-footer">
+  <div class="wrapper">
+    <div class="footer-content">
+      <div class="footer-info">
+        <p>&copy; {{ 'now' | date: "%Y" }} {{ site.title }}. All rights reserved.</p>
+        <p>{{ site.description }}</p>
+      </div>
+
+      <div class="social-links">
+        {% for social in site.data.social %}
+          <a href="{{ social[1].url }}" target="_blank" rel="noopener noreferrer" aria-label="{{ social[1].name }}" class="social-link">
+            <img src="{{ '/assets/images/icons/' | append: social[1].icon | relative_url }}" alt="{{ social[1].name }}" class="social-icon">
+          </a>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</footer>

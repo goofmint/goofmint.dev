@@ -1,0 +1,77 @@
+ja:
+  site:
+    title: goofmint.dev
+    description: 個人ポートフォリオサイト
+
+  nav:
+    home: ホーム
+    projects: プロジェクト
+    blog: ブログ
+    about: について
+
+  home:
+    hero_title: Welcome to goofmint.dev
+    hero_description: 個人ポートフォリオサイトへようこそ
+    about_title: About
+    about_description: ここに自己紹介や経歴などを記載します。
+    featured_projects: 注目のプロジェクト
+    latest_posts: 最新の投稿
+    view_all_projects: すべてのプロジェクトを見る
+    view_all_posts: すべての投稿を見る
+
+  projects:
+    title: プロジェクト
+
+  blog:
+    title: ブログ
+
+  about:
+    title: について
+    skills: スキル
+    experience: 経歴
+    contact: お問い合わせ
+
+  post:
+    posted_on: 投稿日
+
+  footer:
+    rights: All rights reserved.
+
+en:
+  site:
+    title: goofmint.dev
+    description: Personal Portfolio Site
+
+  nav:
+    home: Home
+    projects: Projects
+    blog: Blog
+    about: About
+
+  home:
+    hero_title: Welcome to goofmint.dev
+    hero_description: Welcome to my personal portfolio site
+    about_title: About
+    about_description: This is where you can write your self-introduction and experience.
+    featured_projects: Featured Projects
+    latest_posts: Latest Posts
+    view_all_projects: View All Projects
+    view_all_posts: View All Posts
+
+  projects:
+    title: Projects
+
+  blog:
+    title: Blog
+
+  about:
+    title: About
+    skills: Skills
+    experience: Experience
+    contact: Contact
+
+  post:
+    posted_on: Posted on
+
+  footer:
+    rights: All rights reserved.

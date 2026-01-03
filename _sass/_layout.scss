@@ -1,0 +1,140 @@
+// Layout styles
+
+// Header
+.site-header {
+  background-color: var(--header-bg);
+  border-bottom: 1px solid var(--header-border);
+  padding: 20px 0;
+
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .site-title {
+    font-size: 1.5em;
+    font-weight: 700;
+    color: var(--text-color);
+
+    &:hover {
+      color: var(--link-color);
+    }
+  }
+
+  .header-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .site-nav {
+    display: flex;
+    gap: 20px;
+
+    a {
+      color: var(--text-color);
+      font-weight: 500;
+      opacity: 0.8;
+
+      &:hover {
+        color: var(--link-color);
+        opacity: 1;
+      }
+    }
+  }
+}
+
+// Main content
+.page-content {
+  padding: 40px 0;
+  min-height: calc(100vh - 200px);
+}
+
+// Footer
+.site-footer {
+  background-color: var(--header-bg);
+  border-top: 1px solid var(--header-border);
+  padding: 40px 0;
+  margin-top: 60px;
+
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    text-align: center;
+    color: var(--text-color);
+    opacity: 0.8;
+
+    .footer-info {
+      p {
+        margin-bottom: 0.5em;
+      }
+    }
+  }
+
+  .social-links {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: transparent;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background-color: rgba(16, 185, 129, 0.1);
+      transform: translateY(-3px);
+    }
+
+    .social-icon {
+      width: 24px;
+      height: 24px;
+      filter: brightness(0) saturate(100%) invert(40%) sepia(0%) saturate(0%) hue-rotate(180deg) brightness(95%) contrast(90%);
+      transition: filter 0.3s ease;
+    }
+
+    &:hover .social-icon {
+      filter: brightness(0) saturate(100%) invert(56%) sepia(98%) saturate(565%) hue-rotate(106deg) brightness(93%) contrast(92%);
+    }
+  }
+}
+
+// Hero section
+.hero {
+  text-align: center;
+  padding: 60px 0;
+  background: linear-gradient(135deg, var(--hero-gradient-start) 0%, var(--hero-gradient-end) 100%);
+  color: #fff;
+  margin-bottom: 40px;
+  border-radius: 8px;
+
+  h1 {
+    font-size: 3em;
+    margin-bottom: 0.3em;
+  }
+
+  p {
+    font-size: 1.2em;
+  }
+}
+
+// Sections
+section {
+  margin-bottom: 60px;
+
+  h2 {
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--border-color);
+  }
+}

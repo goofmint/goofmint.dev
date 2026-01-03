@@ -1,0 +1,131 @@
+// Component styles
+
+// Project grid
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.project-card {
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+
+  h2, h3 {
+    margin-bottom: 10px;
+
+    a {
+      color: #333;
+      &:hover {
+        color: #0066cc;
+      }
+    }
+  }
+}
+
+.project-tech {
+  margin: 10px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tech-tag {
+  display: inline-block;
+  padding: 4px 12px;
+  background-color: #e9ecef;
+  border-radius: 12px;
+  font-size: 0.85em;
+  color: #666;
+}
+
+// Post list
+.post-list {
+  list-style: none;
+
+  li {
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #e9ecef;
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+  h2, h3 {
+    margin-bottom: 10px;
+
+    a {
+      color: #333;
+      &:hover {
+        color: #0066cc;
+      }
+    }
+  }
+
+  .post-meta {
+    color: #666;
+    font-size: 0.9em;
+    margin-bottom: 10px;
+  }
+}
+
+// Post/Project content
+.post, .project {
+  max-width: 800px;
+  margin: 0 auto;
+
+  .post-header, .project-header {
+    margin-bottom: 30px;
+
+    h1 {
+      margin-bottom: 15px;
+    }
+  }
+
+  .post-content, .project-content {
+    line-height: 1.8;
+
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 4px;
+      margin: 20px 0;
+    }
+
+    code {
+      background-color: #f8f9fa;
+      padding: 2px 6px;
+      border-radius: 3px;
+      font-family: "Courier New", monospace;
+    }
+
+    pre {
+      background-color: #f8f9fa;
+      padding: 15px;
+      border-radius: 4px;
+      overflow-x: auto;
+      margin: 20px 0;
+
+      code {
+        background-color: transparent;
+        padding: 0;
+      }
+    }
+  }
+
+  .project-links {
+    margin-top: 30px;
+    display: flex;
+    gap: 15px;
+  }
+}
