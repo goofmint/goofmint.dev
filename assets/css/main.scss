@@ -53,16 +53,27 @@
   color: #fff;
 }
 
-.page-content ul {
-  list-style-type: disc;
+.page-content ul, .page-content ol {
   padding-left: 20px;
   padding-bottom: 20px;
 }
-.page-content ul li {
+.page-content ul li, .page-content ol li {
   margin-left: 16px;
 }
 
 .page-content img {
   max-width: 30%;
   height: auto;
+}
+
+.page-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.page-content table th, .page-content table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
 }
