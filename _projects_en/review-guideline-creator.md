@@ -4,7 +4,8 @@ tech:
   - Code Review
   - Generator
 status: Working
-github: https://rgc.goofmint.dev/
+github: https://github.com/goofmint/review-guideline-creator
+site: https://rgc.goofmint.dev/
 ---
 
 Code Review Guideline Creator is a wizard application that enables easy creation of code review guidelines optimized for your team, based on Google's best practices.
