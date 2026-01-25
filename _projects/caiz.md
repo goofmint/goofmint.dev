@@ -3,7 +3,7 @@ title: Caiz.dev
 tech:
   - Community
   - NodeBB
-status: Working
+status: Archived
 github: https://github.com/goofmint/caiz
 site: https://caiz.dev/
 ---
